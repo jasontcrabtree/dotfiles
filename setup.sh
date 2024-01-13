@@ -48,3 +48,5 @@ install_brew_cask visual-studio-code
 install_brew_cask warp
 install_brew_cask google-chrome
 # Add more GUI applications as needed
+
+echo "Setup complete. Please run 'source ~/.zshrc' to apply changes."
