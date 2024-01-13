@@ -1,7 +1,26 @@
-# automatically navigatges to folder coding-local [Working directory]
-# https://stackoverflow.com/questions/5696757/set-the-default-directory-in-mac-terminal
-# cd ~/Coding-Local/
+# Core system utilities PATH
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
+# NVM setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Additional PATH setup
+export PATH="$HOME/.dotnet/tools:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.npm-packages/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+export PATH="/usr/local/share/dotnet:$PATH"
+export PATH="$PATH:/Applications/Visual-Studio-Code.app/Contents/Resources/app/bin"
+
+# Python PATH Setup
+export PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
+
+autoload -Uz compinit && compinit
+
+####### ALIASES ########
 # Navigate to location
 alias home="cd ~"
 alias desktop="cd ~/Desktop/"
@@ -55,51 +74,47 @@ alias pip="pip3"
 alias mysql="/usr/local/mysql/bin/mysql"
 alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
 
-autoload -Uz compinit && compinit
+####### END ALIASES ########
 
-# Python PATH Setup
-export PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin'"
 
-# Dotnet setup
-# export PATH="/usr/local/share/dotnet:$PATH"
-# export PATH="$HOME/.dotnet/tools"
-# export PATH="$PATH:/Users/jasontcrabtree/.dotnet/tools"
 
-# export PATH="$PATH:/Users/jasontcrabtree/.dotnet/tools/dotnet-ef"
-# export PATH="/usr/local/bin"
-# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export PATH=$PATH:/usr/local
-# export PATH=$PATH:/Users/jasontcrabtree/
-# export PATH=$PATH:/home/users/jasontcrabtree/
-# export PATH=$PATH:/Users/jasontcrabtree/.npm-global/bin
-# export PATH=$PATH:/Users/jasontcrabtree/.npm-packages
-# export PATH=$PATH:/Users/jasontcrabtree/.npm-packages/bin
-# export PATH=$PATH:/Users/jasontcrabtree/.npm-packages/lib/node_modules
-# export PATH=$PATH:$(npm bin -g)
-# export PATH="$PATH:/Applications/Visual-Studio-Code.app/Contents/Resources/app/bin"
-
-# source ~/.bash_profilesource /Users/jasontcrabtree/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Core system utilities
-export PATH="/usr/bin:$PATH"
-export PATH="/bin:$PATH"
-
-# NVM setup
+# # Core system utilities
+# # NVM setup
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# PATH setup
-export PATH="$HOME/.dotnet/tools:$PATH"
-export PATH="$HOME/.npm-global/bin:$PATH"
-export PATH="$HOME/.npm-packages/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/sbin:$PATH"
-export PATH="/sbin:$PATH"
-export PATH="/usr/local/go/bin:$PATH"
+# # PATH setup
+# export PATH="/usr/bin:$PATH"
+# export PATH="/bin:$PATH"
+# export PATH="/usr/sbin:$PATH"
+# export PATH="/sbin:$PATH"
 
-# Node.js version managed by NVM
+# export PATH="$HOME/.dotnet/tools:$PATH"
+# export PATH="$HOME/.npm-global/bin:$PATH"
+# export PATH="$HOME/.npm-packages/bin:$PATH"
+
+# export PATH="/usr/local/bin:$PATH"
+# export PATH="/usr/local/go/bin:$PATH"
+
+# # Dotnet setup
+# export PATH="/usr/local/share/dotnet:$PATH"
+# export PATH="$HOME/.dotnet/tools"
+# export PATH="$PATH:/Users/jasontcrabtree/.dotnet/tools"
+# export PATH="$PATH:/Applications/Visual-Studio-Code.app/Contents/Resources/app/bin"
+# export PATH="$PATH:/Users/jasontcrabtree/.dotnet/tools/dotnet-ef"
+
+# # export PATH="/usr/local/bin"
+# # export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# # export PATH=$PATH:/usr/local
+# # export PATH=$PATH:/Users/jasontcrabtree/
+# # export PATH=$PATH:/home/users/jasontcrabtree/
+# # export PATH=$PATH:/Users/jasontcrabtree/.npm-global/bin
+# # export PATH=$PATH:/Users/jasontcrabtree/.npm-packages
+# # export PATH=$PATH:/Users/jasontcrabtree/.npm-packages/bin
+# # export PATH=$PATH:/Users/jasontcrabtree/.npm-packages/lib/node_modules
+# # export PATH=$PATH:$(npm bin -g)
+
+# # Node.js version managed by NVM
 # export PATH="$HOME/.nvm/versions/node/v20.10.0/bin:$PATH"
