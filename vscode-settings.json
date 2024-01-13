@@ -1,0 +1,159 @@
+{
+  "editor.minimap.enabled": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 22,
+  "editor.wordWrap": "on",
+  "workbench.sideBar.location": "left",
+  "explorer.sortOrder": "type",
+  "editor.trimAutoWhitespace": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "files.trimFinalNewlines": false,
+    "editor.formatOnSave": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": false,
+  "editor.autoIndent": "full",
+  "workbench.tree.indent": 16,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "mdx": "mdx",
+    "md": "md",
+    "markdown": "markdown",
+    "typescript": "typescriptreact"
+  },
+  "emmet.showExpandedAbbreviation": "always",
+  "color-highlight.enable": true,
+  "color-highlight.matchWords": true,
+  "workbench.startupEditor": "welcomePage",
+  "workbench.editor.highlightModifiedTabs": true,
+  "window.closeWhenEmpty": true,
+  "files.autoSave": "onWindowChange",
+  "editor.colorDecorators": true,
+  "html-css-class-completion.includeGlobPattern": "**/*.{css,html,js}",
+  "html.autoClosingTags": true, // turned on to try and fix multiple body tags
+  "editor.autoClosingQuotes": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "markdown.preview.breaks": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxBracketSameLine": true,
+  "html.format.indentHandlebars": true,
+  "html.format.unformatted": "wbr",
+  // "prettier.trailingComma": "es5",
+  "prettier.htmlWhitespaceSensitivity": "strict",
+  "prettier.trailingComma": "es5",
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSpacing": true,
+  "prettier.quoteProps": "as-needed",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.autoClosingBrackets": "always",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "liquid.format": true,
+  // "[mdx]": {
+  //   "editor.formatOnSave": true,
+  // },
+  // ---- //
+  // WES BOS ESLINT CONFIGS These are all my auto-save configs
+  // These are all my auto-save configs
+  "editor.formatOnSave": true,
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    // "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    // "editor.formatOnSave": false
+  },
+  "[html]": {
+    // "editor.formatOnSave": true
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  // tell the ESLint plugin to run on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  // "eslint.options": {
+  //   "rules": {
+  //     "react/prop-types": 0
+  //   },
+  //   "useEslintrc": false,
+  //   "parserOptions": {
+  //     "ecmaVersion": 2017,
+  //     "sourceType": "module"
+  //   },
+  //   "parser": "babel-eslint",
+  //   "env": {
+  //     "es6": true
+  //   }
+  //   /* "extensions": [
+  //     ".js",
+  //     ".jsx",
+  //     ".md",
+  //     ".mdx",
+  //     ".ts",
+  //     ".tsx"
+  //   ],
+  // //   "eslint.validate": [
+  // //     "markdown",
+  // //     // "mdx",
+  // //     "javascript",
+  // //     "javascriptreact",
+  // //     "typescript",
+  // //     "typescriptreact"
+  // //   ] */
+  // },
+  // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ------ END WES BOS ESLINT CONFIG --------
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "_site": true,
+    ".*": true
+  },
+  "editor.linkedEditing": true,
+  // "diffEditor.ignoreTrimWhitespace": true,
+  // "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "SynthWave '84",
+  // "workbench.colorTheme": "Shades of Purple",
+  // "workbench.colorTheme": "Tokyo Night",
+  "git.decorations.enabled": false,
+  "scm.diffDecorationsGutterVisibility": "hover",
+  "scm.diffDecorations": "none",
+  "files.associations": {
+    "*.html": "html"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "go.toolsManagement.autoUpdate": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.inlineSuggest.suppressSuggestions": false
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "workbench.activityBar.location": "hidden",
+  "css.lint.unknownAtRules": "ignore",
+  "security.promptForLocalFileProtocolHandling": false
+}
